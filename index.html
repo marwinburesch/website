@@ -4,56 +4,74 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My personal website</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header>
-      <h1>Welcome to my personal website</h1>
-      <nav>
-        <ul>
-          <li>Home</li>
-          <li>
-            <a href="#about"> About Me </a>
-          </li>
-          <li>Contact</li>
-          <li>Career</li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section>
-        <h2 id="about">About Me</h2>
-        <img src="/images/profile_picture.jpg" alt="marwin's profile picture" />
-        <p>
-          <em>Lorem ipsum</em> dolor sit amet consectetur adipisicing elit.
-          Officia, iste quidem. Quisquam in, <strong>praesentium</strong> labore
-          debitis voluptatibus nisi impedit doloribus hic culpa laborum
-          laudantium quidem eum facilis excepturi at.
-        </p>
-        <section></section>
-      </section>
-      <section>
-        <h2>Social Media Links</h2>
-        <a href="https://github.com/marwinburesch">GitHub</a>
-        <a href="">LinkedIn</a>
-        <a href="">Codepen.io</a>
-      </section>
-      <section>
-        <h2>Things I like to do</h2>
-        <ul>
-          <li>Cooking</li>
-          <li>Video Games</li>
-        </ul>
-      </section>
-      <section>
-        <h2>Things I know about web dev</h2>
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JS</li>
-          <li>React</li>
-        </ul>
-      </section>
-    </main>
-    <footer>made with ♥ & web technology</footer>
+    <div class="layout-grid layout-flex">
+      <header class="grid-header">
+        <h1>Welcome to my personal website</h1>
+        <nav>
+          <ul>
+            <li class="nav-element">Home</li>
+            <li class="nav-element">
+              <a href="#about"> About Me </a>
+            </li>
+            <li class="nav-element">Contact</li>
+            <li class="nav-element">Career</li>
+          </ul>
+        </nav>
+      </header>
+      <main class="grid-main flex-main">
+        <section>
+          <h2 id="about">About Me</h2>
+          <div class="image-profile-frame">
+            <img
+              class="image-profile"
+              src="/images/profile_picture.jpg"
+              alt="marwin's profile picture"
+            />
+          </div>
+          <p>
+            <em>Lorem ipsum</em> dolor sit amet consectetur adipisicing elit.
+            Officia, iste quidem. Quisquam in,
+            <strong>praesentium</strong> labore debitis voluptatibus nisi
+            impedit doloribus hic culpa laborum laudantium quidem eum facilis
+            excepturi at.
+          </p>
+          <section></section>
+        </section>
+        <section>
+          <h2>Social Media Links</h2>
+          <a href="https://github.com/marwinburesch">GitHub</a>
+          <a href="">LinkedIn</a>
+          <a href="">Codepen.io</a>
+        </section>
+        <section>
+          <h2>Things I like to do</h2>
+          <ul>
+            <li>Cooking</li>
+            <li>Video Games</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Things I know about web dev</h2>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JS</li>
+            <li>React</li>
+          </ul>
+        </section>
+      </main>
+      <footer class="grid-footer flex-footer">
+        <div>made with ♥ & web technology</div>
+        <div>2021</div>
+      </footer>
+    </div>
   </body>
 </html>
