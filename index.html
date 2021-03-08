@@ -4,56 +4,93 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>My personal website</title>
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Merriweather+Sans&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
-    <header>
-      <h1>Welcome to my personal website</h1>
-      <nav>
-        <ul>
-          <li>Home</li>
-          <li>
-            <a href="#about"> About Me </a>
-          </li>
-          <li>Contact</li>
-          <li>Career</li>
-        </ul>
-      </nav>
-    </header>
-    <main>
-      <section>
-        <h2 id="about">About Me</h2>
-        <img src="/images/profile_picture.jpg" alt="marwin's profile picture" />
+    <div class="layout-grid layout-flex">
+      <header class="grid-header">
+        <h1>Welcome to my personal website</h1>
+        <nav>
+          <ul>
+            <li class="nav-element">Home</li>
+            <li class="nav-element">
+              <a href="#about"> About Me </a>
+            </li>
+            <li class="nav-element">Contact</li>
+            <li class="nav-element">Career</li>
+          </ul>
+        </nav>
+      </header>
+      <main class="grid-main flex-main">
+        <section>
+          <h2 id="about">About Me</h2>
+          <div class="image-profile-frame">
+            <img
+              class="image-profile"
+              src="/images/profile_picture.jpg"
+              alt="marwin's profile picture"
+            />
+          </div>
+          <p>
+            <em>Lorem ipsum</em> dolor sit amet consectetur adipisicing elit.
+            Officia, iste quidem. Quisquam in,
+            <strong>praesentium</strong> labore debitis voluptatibus nisi
+            impedit doloribus hic culpa laborum laudantium quidem eum facilis
+            excepturi at.
+          </p>
+          <section></section>
+        </section>
+        <section>
+          <h2>Social Media Links</h2>
+          <a href="https://github.com/marwinburesch">GitHub</a>
+          <a href="">LinkedIn</a>
+          <a href="">Codepen.io</a>
+        </section>
         <p>
-          <em>Lorem ipsum</em> dolor sit amet consectetur adipisicing elit.
-          Officia, iste quidem. Quisquam in, <strong>praesentium</strong> labore
-          debitis voluptatibus nisi impedit doloribus hic culpa laborum
-          laudantium quidem eum facilis excepturi at.
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Optio, quis
+          blanditiis facilis voluptates pariatur quasi perspiciatis quae, sequi
+          labore debitis quo ut fugit eaque ad veritatis ex earum quod
+          consectetur. Iste perferendis error laboriosam eaque non et in quia
+          exercitationem eum quam eos ut id eligendi, odio dolorem aspernatur
+          recusandae architecto. Quos quasi ea repudiandae voluptatem
+          voluptatibus recusandae quas a. Est maiores voluptatem repellendus
+          voluptates temporibus, facilis iusto officia hic ex obcaecati quis
+          dolore perferendis impedit deleniti ratione consectetur cumque dolor
+          culpa sapiente eius non nulla. Repudiandae doloremque eligendi soluta!
+          Tempore deserunt accusantium dolores veritatis repellat ipsum quaerat,
+          laborum commodi est nam quod ducimus ea facilis libero molestiae odit
+          amet! Animi similique voluptas dolorem harum quas quis explicabo earum
+          natus. Ullam voluptatum, qui adipisci quasi reprehenderit suscipit
+          aperiam inventore numquam eveniet deleniti aliquid, amet cumque quia
+          aspernatur dolores illum officia quis laudantium minus esse explicabo!
+          Magnam non beatae natus odit!
         </p>
-        <section></section>
-      </section>
-      <section>
-        <h2>Social Media Links</h2>
-        <a href="https://github.com/marwinburesch">GitHub</a>
-        <a href="">LinkedIn</a>
-        <a href="">Codepen.io</a>
-      </section>
-      <section>
-        <h2>Things I like to do</h2>
-        <ul>
-          <li>Cooking</li>
-          <li>Video Games</li>
-        </ul>
-      </section>
-      <section>
-        <h2>Things I know about web dev</h2>
-        <ul>
-          <li>HTML</li>
-          <li>CSS</li>
-          <li>JS</li>
-          <li>React</li>
-        </ul>
-      </section>
-    </main>
-    <footer>made with ♥ & web technology</footer>
+        <section>
+          <h2>Things I like to do</h2>
+          <ul>
+            <li>Cooking</li>
+            <li>Video Games</li>
+          </ul>
+        </section>
+        <section>
+          <h2>Things I know about web dev</h2>
+          <ul>
+            <li>HTML</li>
+            <li>CSS</li>
+            <li>JS</li>
+            <li>React</li>
+          </ul>
+        </section>
+      </main>
+      <footer class="grid-footer flex-footer">
+        <div>made with ♥ & web technology</div>
+        <div>2021</div>
+      </footer>
+    </div>
   </body>
 </html>
